@@ -2,10 +2,11 @@ pipeline {
     agent any
     
     stages {
-        stage('Checkout') {
+        stage('cloning') {
             steps {
                 // Checkout code from GitHub
-                git 'https://github.com/Naman-cell/jenkins-tester.git'
+                git clone 'https://github.com/Naman-cell/jenkins-tester.git'
+                cd jenkins-tester
                 echo "entering the first stage"
             }
         }
