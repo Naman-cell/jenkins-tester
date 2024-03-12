@@ -6,6 +6,7 @@ pipeline {
             steps {
                 // Checkout code from GitHub
                 git 'https://github.com/Naman-cell/jenkins-tester.git'
+                echo "entering the first stage"
             }
         }
         
